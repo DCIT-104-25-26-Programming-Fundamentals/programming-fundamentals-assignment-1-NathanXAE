@@ -36,11 +36,11 @@
 # =============================================================================
 
 def is_prime(n):
-    # Numbers below 2 (like 0, 1, or negatives) are never prime.
+    # numbers less than 2(like 0, 1, or negatives) are not prime, so I skipped.
     if n < 2:
         return False
 
-    # Check if any number from 2 to n-1 divides n evenly.
+    # Checking if anything can divide it evenly.
     # If it does, n is not prime.
     for divisor in range(2, n):
         if n % divisor == 0:
